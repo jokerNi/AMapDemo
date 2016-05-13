@@ -3,10 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="org.mazhuang.amapdemo.MainActivity">
+    tools:context="org.mazhuang.amapdemo.activity.NaviShowActivity">
 
-    <ExpandableListView
-        android:id="@+id/list"
+    <com.amap.api.navi.AMapNaviView
+        android:id="@+id/navi"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

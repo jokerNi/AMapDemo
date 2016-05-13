@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">AMapDemo</string>
+    <string name="iflytek_app_id">57344887</string>
+    <string name="preference_default_tts_role">xiaoyan</string>
+    <string name="preference_key_tts_volume">tts_volume</string>
+    <string name="preference_key_tts_speed">tts_speed</string>
+    <string name="preference_key_tts_pitch">tts_pitch</string>
+    <string name="preference_default_tts_speed">50</string>
 </resources>

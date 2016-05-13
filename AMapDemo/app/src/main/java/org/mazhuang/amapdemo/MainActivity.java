@@ -1,7 +1,10 @@
 package org.mazhuang.amapdemo;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.widget.ExpandableListView;
+
+import org.mazhuang.amapdemo.adapter.MyExpandableListAdapter;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -9,5 +12,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        MyExpandableListAdapter adapter = new MyExpandableListAdapter(this);
+        ExpandableListView listView = (ExpandableListView) findViewById(R.id.list);
+        if (listView != null) {
+            listView.setAdapter(adapter);
+            listView.setOnChildClickListener(adapter);
+        }
     }
 }
